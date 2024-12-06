@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Colin Walker"
+    },
+    "motivations": {
+      "@value": "Having being financially devastated via government lockdowns and the debacle of the vaccines and the perceived lack of neutrality of news media it is time to have an accountable system where media, local, regional, national and international governing bodies are held accountable and responsible for the people and places they represent."
+    },
+    "objectives": {
+      "@value": "Was a small business owner of a cafe restaurant. Cardano helped save my business during Covid 19. I have always desired more decentralization and now is the time with this amazing technology. I have been following and using Cardano since Smart Contracts were introduced and would like to be a part of it's governance and development. "
+    },
+    "paymentAddress": {
+      "@value": "addr1qy443hqw0jyevkx9yc5g544y9zf5gy4md02pp5fclgj9jwwcu00yh6vha9tw0u2pttvz50g5wdl9zx7x76szw7mcrjvq8cxw4v"
+    },
+    "qualifications": {
+      "@value": "Small Business Owner (Sold in June, 2024)\nActive user of Cardano since May 2020\nActive smart contract, farming, utilizing several wallets and exchanges.\n"
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "x"
+        },
+        "uri": {
+          "@value": "https://x.com/rock_the_chuk"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "LinkedIn"
+        },
+        "uri": {
+          "@value": "https://www.linkedin.com/in/colinwalker1/"
+        }
+      }
+    ]
+  }
+}
